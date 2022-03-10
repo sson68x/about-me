@@ -1,0 +1,20 @@
+body {
+  background-color: lightgreen
+}
+h1 {
+  text-align: center;
+  background-color: yellow;
+  padding: 20 px;
+}
+h2 {
+  text-align: center;
+  background-color: green;
+  padding: 10 px;
+}
+p {
+  text-align: center;
+}
+ol {
+  text-align: left;
+  
+}
