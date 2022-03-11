@@ -76,8 +76,8 @@ alert('Let\'s play a guessing game!');
 
 while(numTurns < 4) {
   numTurns++;
-  let answerSix = prompt('Guess a number between 1 and 20!');
-  if (answerSix == myNum) {
+  let answerSix = prompt('Q6: Guess a number between 1 and 20!');
+  if (answerSix === myNum) {
     alert('You got it!');
     break;
   } else if (answerSix > myNum) {
@@ -86,10 +86,10 @@ while(numTurns < 4) {
     alert('Too low.');
   }
 }
-alert('My number was 9!');
+alert(`My number was ${myNum}!`);
 
 
-alert('Guess one of my faviorite movies!')
+alert('Guess one of my faviorite movies from the following movie list!')
 alert('Aliens, Dunkirk, Interstellar, Spiderman, Transformers')
 
 let myArr = ['Aliens', 'Avengers', 'Seven', 'Toy Story', 'Up']
@@ -98,7 +98,7 @@ let correct = false;
 
 while(attempts > 0) {
   attempts--
-  let answerSeven = prompt('Guess one of my favorite movies!')
+  let answerSeven = prompt('Q7: Guess one of my favorite movies!').toUpperCase();
   console.log(answerSeven)
   for (let i = 0; i < myArr.length; i++) {
     if(answerSeven === myArr[i]) {
@@ -115,8 +115,8 @@ while(attempts > 0) {
 if(correct) {
   alert('You got it!');
 } else {
-  alert('You are incorrect.')
+  alert('You are incorrect.');
 }
 
-alert('You scored ' + score + ' points')
+alert('You scored ' + score + ' points');
 alert(`Thank you for visiting my About Me page. I'll see you agian, ${userGuest}!`);
